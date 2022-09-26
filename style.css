@@ -1,0 +1,397 @@
+@font-face {
+    font-family:"OpenSansCondensed-Light";
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;   
+    background-color:black;
+    text-align: center;
+    
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    background: url(images/black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__nav{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5%;
+    width: 40rem;
+    height: 45px;
+    background-color: gray;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.header__nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    
+}
+.header__title{
+    position: relative; 
+    margin: auto;
+    line-height: 3.2rem;
+    padding-top: 4.5rem;
+}
+.header__title--line1{
+    font-size: 5rem;
+    font-family: "OpenSansCondensed-Light";
+}
+.header__title--line2{
+    font-size: 4rem;
+    font-weight: bold;   
+}
+.header__title--line3{
+    opacity: 0.5;
+    letter-spacing: 0.3rem;
+    font-size: 0.9rem; 
+}
+section{
+    background-color: rgb(34, 34, 34);
+    width: 70rem;
+    margin: auto;
+}
+.section__title{
+    padding-top: 9%;
+    padding-bottom: 7%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.section__title--rightPosition{
+    text-align: left;
+}
+.section__title--bold{
+    font-weight: bold;
+}
+.portfolio__nav ul{
+    display: flex;
+    width: 40rem;
+    margin: auto;
+    justify-content: space-around;
+    list-style-type: none;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+}
+.portfolio__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.portfolio__box img{
+    width: 19rem;
+}
+.portfolio__box--title{
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+}
+.portfolio__box--subTitle{
+    font-size: 0.8rem;
+    margin-bottom: 5rem;
+    color: rgb(204, 204, 204);
+}
+.myresume{
+    display: flex;  }
+.myresume__subTitle{
+    font-family:"arial";
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.myresume__boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0cm;
+}
+.myresume__box{
+    height: 10rem;
+    width: 80%;
+    background-color: rgb(51, 51, 51);
+    border-radius: 0.9rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    line-height: 1.2rem;
+}
+.myresume__box--line1{
+    font-size: 0.7rem;
+    font-weight: bold;
+    
+}
+.myresume__box--line2{
+    font-size: 1.4rem;
+    font-family: "OpenSansCondensed-Light";
+    color: rgb(186, 201, 99);
+}
+.myresume__box--line3{
+    font-size: 1rem;
+    color: gray;
+}
+.myresume__box--line4{
+    font-family: "OpenSansCondensed-Light";
+    font-size: 1rem;
+    color: gray;
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutMe__picture{
+    padding-top: 7rem;
+    width: 37rem;
+    height: 25rem;
+}
+
+.aboutMe__rightSection{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 4.5rem;
+    padding-right: 4.5rem;
+}
+.aboutMe__rightSection--text1{
+    font-family: "OpenSansCondensed-Light";
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 30px;
+}
+.aboutMe__rightSection--text2{
+    color: gray;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+.aboutMe__btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.aboutMe__btns--text{
+    padding: 10px;
+    margin: auto;
+}
+.aboutMe__btn{
+    display: flex;
+    height: 40px;
+    border-radius: 75px;
+    text-align: center;
+}
+.aboutMe__btnLeft{
+    background-color: rgb(186, 201, 99);
+    letter-spacing: 3px;
+}
+.aboutMe__btnRight{
+    background-color: rgb(51, 51, 51);
+    letter-spacing: 2px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.contact__title{
+    font-family: "OpenSansCondensed-Light";
+    font-size: 30px;
+}
+.contact__form{
+    width: 650px;
+}
+.contact__form p{
+    display: flex;
+    flex-direction: column;
+}
+.contact__form--textArea{
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: 0;
+}
+.contact__form--messageArea{
+    margin-bottom: 20px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: 0;
+    height: 100px;
+    resize: none;
+}
+::placeholder{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: rgb(186, 201, 99);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.contact__rightSection--text1{
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(186, 201, 99);
+}
+.contact__rightSection--text2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 25px;
+}
+footer{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-size: 10PX;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width : 1135px)
+{
+    section{
+        width: 50rem;
+    }
+    .portfolio__box img{
+        width: 15rem;
+    }
+    .myresume__box{
+        
+        width: 75%;
+        
+    }
+    .aboutMe__picture{
+        padding-top: 10rem;
+        width: 25rem;
+        height: 18rem;
+    }
+    .contact__form{
+            width: 20rem;
+        }
+    }
+
+    @media only screen and (max-device-width : 840px)
+{
+    section{
+        width: 30rem;
+    }
+    .portfolio__box img{
+        width: 40rem;
+    }
+    .myresume{
+    display: block;
+    }
+    .aboutMe{
+        display: block;
+    }
+    .contact{
+        flex-direction: column;
+
+        
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio__nav ul{
+        width: 20px;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+    /* Styles */
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
+    /* Styles */
+    }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    }
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width : 1224px) {
+    /* Styles */
+    }
+    
+    /* Large screens ----------- */
+    @media only screen and (min-width : 1824px) {
+    /* Styles */
+    }
